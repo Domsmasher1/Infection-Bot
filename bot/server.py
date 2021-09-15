@@ -6,6 +6,8 @@ app = Flask('')
 @app.route('/')
 def main():
   return render_template('index.html')
+def home():
+    return "Im still suffering becuase of you guys"
 
 def run():
   app.run(host='0.0.0.0', port=8080)
